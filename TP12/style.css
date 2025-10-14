@@ -1,0 +1,27 @@
+body{
+    background-color: gray;
+    text-align: center;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    width: 220px;
+    height: 180px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.c1{
+    background-color: rgb(226, 43, 43);
+    float: left;
+
+
+
+
+    height: 200px;
+    width: 800px;
+    margin: 10px;
+
+}
+
+.c2{
+    background-color: rgb(196, 166, 224);
+
+
+    height: 200px;
+    width: 800px;
+    margin: 10px;
+    float: right;
+
+}
+.c3{
+    background-color: rgb(108, 223, 55);
+
+
+
+
+    height: 200px;
+    width: 800px;
+    margin: 10px;
+    clear: both;
+
+}
+
+
+p{
+    color: rgb(145, 152, 255);
+}
+
