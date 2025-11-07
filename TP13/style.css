@@ -1,0 +1,36 @@
+body {
+    background-color: #0c0c0c;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.log {
+    background-color: #ffffff;
+    height: 200px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 150px;
+}
+
+
+h1 {
+    color: #2d99ff;
+    margin-bottom: 20px;
+}
+
+button {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #303030;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
