@@ -1,0 +1,41 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+
+    
+}
+
+button {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #303030;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #439bff;
+    border-color: rgba(#439bff,#439bff ,#b9d0eb , alpha);
+
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+img{
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px rgb(206, 206, 206);
+}
