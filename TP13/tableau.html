@@ -13,20 +13,27 @@
 
 Nom : <br>
 <input type="text" placeholder="Nom" name="nom" id="nom"> <br>
+Prenom : <br>
+<input type="text" placeholder="Prenom" name="prenom" id="prenom"> <br>
 Age : <br>
 <input type="text" placeholder="Age" name="age" id="age"> <br><br>
+
+
 
 <table id="myTable">
 <tr>
 <td>Nom</td>
+<td>Prénom</td>
 <td>Age</td>
 </tr>
 <tr>
 <td>John</td>
+<td>Johny</td>
 <td>20</td>
 </tr>
 <tr>
 <td>Jane</td>
+<td>Janette</td>
 <td>25</td>
 </tr>
 </table>
@@ -39,12 +46,12 @@ Age : <br>
 
 function addLigne() {
 
-// Récupérer les valeurs
 var name = document.getElementById("nom").value;
+var surname = document.getElementById("prenom").value;
 var age = document.getElementById("age").value;
 
-if (name == "" || age == "") {
-alert("Un des deux éléments n'est pas complet ou validé");
+if (name == "" || age == "" || surname == "") {
+alert("Un des trois éléments n'est pas complet ou validé");
 }
 else if (age < 10 || age > 20) {
 alert("L'âge n'est pas validé");
@@ -54,9 +61,11 @@ var table = document.getElementById("myTable");
 var newRow = table.insertRow(-1);
 var cell1 = newRow.insertCell(0);
 var cell2 = newRow.insertCell(1);
+var cell3 = newRow.insertCell(2);
 
 cell1.innerHTML = name;
-cell2.innerHTML = age;
+cell2.innerHTML = surname;
+cell3.innerHTML = age;
 }
 }
 
