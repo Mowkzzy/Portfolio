@@ -1,0 +1,140 @@
+body{
+    background-color: #131313;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+label{
+    color: #2d99ff;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(90deg, rgb(86, 0, 184), #2d99ff);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    display: inline-block;
+    color: #2d99ff;
+    
+}
+
+form{
+
+
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 10px;
+
+    
+}
+
+.question-block{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: 1000;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="checkbox"] {
+}
+
+input[type="checkbox"]:hover {
+    box-shadow: 0 2px 10px rgb(255, 255, 255);
+}
+label{
+    display: flex;
+}
+.hero-separator {
+    width: 700px;
+    height: 3px;
+    background: linear-gradient(90deg, #5600b8, #1975ff);
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+.Correction{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+.Corrigé{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+.Effacer{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.Correction:hover{
+    box-shadow: 0 2px 10px rgb(174, 0, 255);
+    background-color: rgb(39, 39, 39);
+
+}
+
+
+.Effacer:hover{
+    box-shadow: 0 2px 10px rgb(255, 0, 0);
+    background-color: rgb(39, 39, 39);
+}
+
+.Corrigé:hover{
+    box-shadow: 0 2px 10px rgb(0, 175, 23);
+    background-color: rgb(39, 39, 39);
+}
+
+
