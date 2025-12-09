@@ -1,0 +1,175 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0; 
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page-facture {
+    width: 900px;
+    background-color: #1e1e1e; 
+    border: 1px solid #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+
+.header-facture {
+    background-color: #0099ff; 
+    color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.header-facture h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+.info-societe p {
+    margin: 2px 0;
+}
+
+.adresses-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid #333;
+    margin-bottom: 20px;
+}
+
+.conditions {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 0.8em;
+    color: #999;
+}
+
+.destinataire, .envoyer-a {
+    width: 45%;
+    font-size: 0.9em;
+}
+
+.destinataire hr, .envoyer-a hr {
+    border-color: #0099ff;
+    margin-bottom: 10px;
+}
+
+#table_inv {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2a2a2a; 
+    color: #e0e0e0;
+}
+
+#table_inv thead th {
+    background-color: #0099ff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #333;
+}
+
+.quantite-col, .prix-unitaire-col, .total-col { text-align: right !important; }
+
+.row td {
+    border: 1px solid #333;
+    padding: 0;
+}
+
+.input {
+    width: 98%;
+    border: none;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #2a2a2a; 
+    color: #e0e0e0;
+
+}
+
+.qte, .prix, .totalLigne {
+    text-align: right !important;
+}
+
+#table_inv tfoot {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+#table_inv tfoot tr td {
+    padding: 8px;
+    border-top: 1px solid #333;
+}
+
+.notes {
+    text-align: left;
+    vertical-align: top;
+    font-size: 0.9em;
+    padding-top: 15px !important;
+    color: #999;
+}
+
+.label-calcul {
+    text-align: right;
+    font-weight: bold;
+}
+
+.output-calcul {
+    text-align: right;
+    font-weight: bold;
+    color: #505050; 
+}
+
+.input-calcul input {
+    text-align: right;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    width: 90%;
+    padding: 5px;
+}
+
+.solde-row .label-calcul, .solde-output {
+    background-color: #505050; 
+    color: white;
+    font-size: 1.3em;
+    padding: 10px 5px;
+}
+
+.solde-output {
+    text-align: right;
+    background-color: #505050; 
+}
+
+.actions {
+    padding: 20px 0 0;
+    text-align: left;
+}
+
+.actions button {
+    padding: 10px 18px;
+    margin-right: 15px;
+    cursor: pointer;
+    background-color: #505050; 
+    color: #1e1e1e;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #9aeaf5;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module de Facturation GSB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+        <div class="header-facture">
+            <div class="info-societe">
+                <p><strong>BMW</strong></p>
+                <p>25 Boulvard des ceuilleur</p>
+                <p class="details-contact">Détails du contact</p>
+            </div>
+            <div class="info-facture">
+                <h1>FACTURE</h1>
+                <p>26/01/2023</p>
+                <p class="petit-texte">Nom de l'éditeur</p>
+            </div>
+        </div>
+        
+        <div class="adresses-container">
+            <p class="conditions">Conditions de paiement, par exemple dû dans X jours</p>
+            
+            <div class="destinataire">
+                <p><strong>Destinataire</strong></p>
+                <hr>
+                <p>Nom</p>
+                <p>Nom de la société</p>
+                <p>Adresse postale</p>
+                <p>Téléphone</p>
+                <p>Email</p>
+            </div>
+            
+            <div class="envoyer-a">
+                <p><strong>Envoyer à</strong></p>
+                <hr>
+                <p>Nom</p>
+                <p>Nom de la société</p>
+                <p>Adresse postale</p>
+                <p>Téléphone</p>
+                <p>Email</p>
+            </div>
+        </div>
+
+        <table id="table_inv">
+            <thead>
+                <tr>
+                    <th colspan="2" class="description-col">DESCRIPTION</th>
+                    <th class="quantite-col">QUANTITÉ</th>
+                    <th class="prix-unitaire-col">PRIX UNITAIRE</th>
+                    <th class="total-col">TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row" id="modeleLigne"> 
+                    <td colspan="2"><input type="text" name="desc" class="input desc" value="desc_modele"></td>
+                    <td><input type="text" name="qte" class="input qte" value="0"></td>
+                    <td><input type="text" name="prix" class="input prix" value="0"></td>
+                    <td><input type="text" name="total" class="input totalLigne" value="0.00" readonly="readonly"></td>
+                </tr>
+
+                <tr class="row lastRow" id="lastLigne">
+                    <td colspan="2"><input type="text" name="desc" class="input desc" value="desc4"></td>
+                    <td><input type="text" name="qte" class="input qte" value="12"></td>
+                    <td><input type="text" name="prix" class="input prix" value="9"></td>
+                    <td><input type="text" name="total" class="input totalLigne" value="108.00" readonly="readonly"></td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3" rowspan="8" class="notes">
+                        <p>Remarques, notes et instructions de paiement</p>
+                    </td>
+                    <td class="label-calcul">SOUS-TOTAL</td>
+                    <td class="output-calcul" id="sous_total_output">0.00</td>
+                </tr>
+                <tr>
+                    <td class="label-calcul">REMISE</td>
+                    <td class="input-calcul"><input type="text" id="remise_input" value="10.00"></td>
+                </tr>
+                <tr>
+                    <td class="label-calcul">SOUS-TOTAL MOINS LES REMISES</td>
+                    <td class="output-calcul" id="sous_total_remise_output">0.00</td>
+                </tr>
+                <tr>
+                    <td class="label-calcul">TAUX D'IMPOSITION</td>
+                    <td class="input-calcul"><input type="text" id="taux_imposition_input" value="10.00%"></td>
+                </tr>
+                <tr>
+                    <td class="label-calcul">TAXE TOTALE</td>
+                    <td class="output-calcul" id="taxe_totale_output">0.00</td>
+                </tr>
+                <tr>
+                    <td class="label-calcul">EXPEDITO, MANUTENTION</td>
+                    <td class="input-calcul"><input type="text" id="frais_expedition_input" value="5.00"></td>
+                </tr>
+                <tr class="solde-row">
+                    <td class="label-calcul">SOLDE DU</td>
+                    <td class="output-calcul solde-output" id="solde_output">0.00€</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <div class="actions">
+            <button onclick="calculate()">Calculer</button>
+            <button onclick="ajouterLigne()">Ajouter une ligne</button>
+            <button onclick="remplir()">Remplir automatiquement</button>
+            <button onclick="annuler()">Annuler</button>
+        </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
